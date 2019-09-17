@@ -30,8 +30,8 @@ class MyGrid(Widget):
     def btn_result(self):
         for key in store:
             print(key)
-            #print(store.keys())   #izpiše vse ključe
-            #print(store.get('voda'))   #izpiše vrednosti na ključu
+            #print(store.keys())   #write all stored keys
+            #print(store.get('voda'))   #write stored values on specific key
             #print(store.get(self.name, self.amount, self.date))
 
 
