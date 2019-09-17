@@ -1,0 +1,52 @@
+<MyGrid>
+    name: name
+    amount : amount
+    date : date
+
+    GridLayout:
+        cols:1
+        size: root.width -200, root.height -200
+        pos: 100, 100
+
+        GridLayout:
+            cols:2
+
+            Label:
+                text: "Name"
+#                color: 1, 255, 0, 1    <- changin color of the text
+#                canvas.before:         <- till line 21 changing color of label
+#                    Color:
+#                        rgba: 0, 75, 0, 75
+#                    Rectangle:
+#                        pos: self.pos
+#                        size: self.size
+
+            TextInput:
+                id: name
+                multiline:False
+
+            Label:
+                text: "Znesek"
+                background_color:(0, 0, 255, 0)
+
+            TextInput:
+                id: amount
+                multiline:False
+
+            Label:
+                text: "Datum"
+                background_color:(0, 0, 255, 0)
+
+            TextInput:
+                id: date
+                multiline:False
+
+        Button:
+            text:"Submit"
+            background_color:(0.8174194, 0.7264268, 0.79841, 1)
+            on_press:root.btn()
+
+        Button:
+            text:"Result"
+            background_color:(0.8174194, 0.7264268, 0.79841, 1)
+            on_press:root.btn_result()
